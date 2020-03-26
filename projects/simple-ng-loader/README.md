@@ -6,9 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 
 The developer can install this package using the below command
-````
     c:\projects\your-project> npm install simple-ng-loader --save
-````    
 
 
 
@@ -52,5 +50,9 @@ In app.component.html
 <simple-ng-loader></simple-ng-loader>
 
 ````
+#### Author
+````
+jandginvestment@gmail.com
 
+````
 ######End of the file
