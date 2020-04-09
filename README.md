@@ -57,7 +57,7 @@ In app.component.html
 
 Input|value
 -----------
-type|"dots","circle"
+type|"dots","circle","bar"
 delayTime| from 0 to 500 (milli sec)
 
 ######End of the file
