@@ -53,7 +53,7 @@ In app.component.html
 
 ````
 
-## Inputs
+## Inputs of
 
 Input|value
 -----------
