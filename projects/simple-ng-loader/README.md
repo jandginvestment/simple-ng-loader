@@ -6,7 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 
 The developer can install this package using the below command
+````
     c:\projects\your-project> npm install simple-ng-loader --save
+````    
 
 
 
@@ -47,12 +49,23 @@ Compatible verymuch with angular 9.0.0 version
 
 In app.component.html
 ````
-<simple-ng-loader></simple-ng-loader>
+<simple-ng-loader type="dots"></simple-ng-loader>
 
 ````
+
+## Inputs
+
+Input|value
+----|----
+type|"dots","circle"
+delayTime| from 0 to 500 (milli sec)
+
 #### Author
 ````
 jandginvestment@gmail.com
 
 ````
+# stackblitz
+[https://stackblitz.com/edit/simple-ng-loader](https://stackblitz.com/edit/simple-ng-loader)
+
 ######End of the file

@@ -5,10 +5,13 @@ import {SimpleNgLoaderService } from './services/simple-ng-loader.service' ;
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SimpleNgLoaderInterceptor } from './interceptors/simple-ng-loader.interceptor';
 import { CommonModule } from '@angular/common';
+import { SimpleDotsComponent } from './components/shared/simple-dots/simple-dots.component';
+import { SimpleDots2Component } from './components/shared/simple-dots2/simple-dots2.component';
+import { SimpleBarComponent } from './components/shared/simple-bar/simple-bar.component';
 
 
 @NgModule({
-  declarations: [SimpleNgLoaderComponent],
+  declarations: [SimpleNgLoaderComponent, SimpleDotsComponent, SimpleDots2Component,  SimpleBarComponent],
   imports: [CommonModule
   ],
   exports: [SimpleNgLoaderComponent],

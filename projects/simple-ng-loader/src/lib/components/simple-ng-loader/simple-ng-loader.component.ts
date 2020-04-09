@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SimpleNgLoaderService } from '../../services/simple-ng-loader.service';
 import { Subject } from 'rxjs';
 
@@ -9,9 +9,13 @@ import { Subject } from 'rxjs';
 })
 export class SimpleNgLoaderComponent implements OnInit {
   isLoading: Subject <boolean> = this.loaderService.isLoading;
+  @Input () public delayTime = 0;
+  @Input () public type = 'circle';
 
-  constructor(private loaderService: SimpleNgLoaderService) { }
+  constructor(private loaderService: SimpleNgLoaderService) {
+   }
   ngOnInit(): void {
+    this.loaderService.assignDelayTime(this.delayTime);
   }
 
 }

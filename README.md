@@ -49,8 +49,15 @@ Compatible verymuch with angular 9.0.0 version
 
 In app.component.html
 ````
-<simple-ng-loader></simple-ng-loader>
+<simple-ng-loader type="dots"></simple-ng-loader>
 
 ````
+
+## Inputs
+
+Input|value
+-----------
+type|"dots","circle"
+delayTime| from 0 to 500 (milli sec)
 
 ######End of the file
