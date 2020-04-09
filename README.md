@@ -47,7 +47,7 @@ Compatible verymuch with angular 9.0.0 version
  export class AppModule { }
  ```
 
-In app.component.html
+In app.component.html 
 ````
 <simple-ng-loader type="dots"></simple-ng-loader>
 
