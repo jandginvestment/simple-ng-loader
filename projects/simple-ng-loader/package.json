@@ -1,6 +1,6 @@
 {
   "name": "@jandginvestment/simple-ng-loader",
-  "version": "0.0.26",
+  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
