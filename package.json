@@ -45,15 +45,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  },
-  "repository": {
-      "type": "git",
-      "url": "https://github.com/jandginvestment/simple-ng-loader.git"
-  },
-  "publishConfig": {
-      "registry": "https://npm.pkg.github.com/"
-  },
-  "homepage": "https://github.com/jandginvestment/simple-ng-loader.git",
-  "author": {"name": "jandginvestment","email": "jandginvestment@gmail.com","url": "https://github.com/jandginvestment/"},
-  "keywords": ["angular9.0","http","Interceptor","httpLoader","Scss","simple-ng-loader","9","spinner","loader","angular-loader","http-loader"]
+  }
 }
