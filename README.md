@@ -69,7 +69,7 @@ jandginvestment@gmail.com
 # stackblitz
 [https://stackblitz.com/edit/simple-ng-loader](https://stackblitz.com/edit/simple-ng-loader)
 
-######End of the file
-######End of the file
+####End of the file
+####End of the file
 
 
