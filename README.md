@@ -14,7 +14,7 @@ The developer can install this package using the below command
 
 ## Compatibility
 
-Compatible verymuch with angular 9.0.0 version
+Compatible verymuch with angular 9.0.0 and above versions
 
 ## Dependancy
     HttpClientModule
@@ -50,7 +50,6 @@ Compatible verymuch with angular 9.0.0 version
 In app.component.html 
 ````
 <simple-ng-loader type="dots"></simple-ng-loader>
-
 ````
 
 ## Inputs
@@ -64,7 +63,6 @@ delayTime| from 0 to 500 (milli sec)
 #### Author
 ````
 jandginvestment@gmail.com
-
 ````
 # stackblitz
 [https://stackblitz.com/edit/simple-ng-loader](https://stackblitz.com/edit/simple-ng-loader)
