@@ -8,7 +8,10 @@ import { Subject } from 'rxjs';
   styleUrls: ['./simple-ng-loader.component.scss']
 })
 export class SimpleNgLoaderComponent implements OnInit {
-  isLoading: Subject <boolean> = this.loaderService.isLoading;
+  get isLoading(): Subject<boolean> {
+    return this.loaderService.isLoading;
+  }
+
   @Input () public delayTime = 0;
   @Input () public type = 'circle';
 
