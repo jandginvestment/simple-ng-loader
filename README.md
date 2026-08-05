@@ -1,112 +1,138 @@
 # simple-ng-loader
 
- This package intercept your http request and shows the loader for you on each request and is in beta version.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+[![npm version](https://img.shields.io/npm/v/simple-ng-loader.svg?style=flat-skin)](https://www.npmjs.com/package/simple-ng-loader)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Note:** Package has been upgraded to Angular 18 with TypeScript 5.2, RxJS 7.8, and modern dependencies.
+An Angular library that intercepts HTTP requests and automatically displays a loading indicator. 
+
+> [!NOTE]
+> This package is currently in **Beta** and has been upgraded to support Angular 18+, TypeScript 5.2+, and RxJS 7.8+.
+
+---
 
 ## Installation
 
-The developer can install this package using the below command
-````
-    c:\projects\your-project> npm install simple-ng-loader --save
-````    
+Install the package via npm:
 
+```bash
+npm install simple-ng-loader --save
+```
 
+---
 
 ## Compatibility
 
-Compatible with Angular 18.0.7 and modern Angular versions (v18+)
-- TypeScript: 5.2+
-- Node.js: 22.22.3+, 24.15.0+, or 26.0.0+
-- RxJS: 7.8+
+Compatible with Angular 18.0.7 and modern Angular versions (v18+).
 
-## Dependancy
+- **Node.js**: `22.22.3+`, `24.15.0+`, or `26.0.0+`
+- **TypeScript**: `5.2+`
+- **RxJS**: `7.8+`
 
-### Required
-- `@angular/common`: 18.0.7+
-- `@angular/core`: 18.0.7+
-- `@angular/platform-browser`: 18.0.7+
-- `rxjs`: 7.8+
+### Dependencies
 
-### Peer Dependencies
-- `HttpClientModule` (from @angular/common/http)
+#### Required
+- `@angular/common`: `18.0.7+`
+- `@angular/core`: `18.0.7+`
+- `@angular/platform-browser`: `18.0.7+`
+- `rxjs`: `7.8+`
 
+#### Peer Dependencies
+- `HttpClientModule` (from `@angular/common/http`)
 
-## How to use
- In AppModule
- ```
- import { BrowserModule } from '@angular/platform-browser';
- import { NgModule } from '@angular/core';
+---
 
- import { AppRoutingModule } from './app-routing.module';
- import { AppComponent } from './app.component';
- import { SimpleNgLoaderModule } from 'simple-ng-loader';
- import { HttpClientModule } from '@angular/common/http';
+## Usage
 
- @NgModule({
+### 1. Import the Module
+
+Add `SimpleNgLoaderModule` and `HttpClientModule` to your `AppModule` imports:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { SimpleNgLoaderModule } from 'simple-ng-loader';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SimpleNgLoaderModule,
-    HttpClientModule
+    HttpClientModule,
+    SimpleNgLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
- })
- export class AppModule { }
- ```
+})
+export class AppModule { }
+```
 
-In app.component.html 
-````
-<simple-ng-loader type="dots"></simple-ng-loader>
-````
+### 2. Add to Template
 
-## Inputs
+Place the loader component in your root template (e.g., `app.component.html`):
 
-Input|value
----|---
-type|"dots","circle","bar"
-delayTime| from 0 to 500 (milli sec)
+```html
+<simple-ng-loader type="dots" [delayTime]="200"></simple-ng-loader>
+```
+
+---
+
+## Component Inputs
+
+| Input | Type | Default | Allowed Values | Description |
+|---|---|---|---|---|
+| `type` | `string` | `"dots"` | `"dots"`, `"circle"`, `"bar"` | Visual style of the loader animation. |
+| `delayTime` | `number` | `0` | `0` to `500` (ms) | Debounce time in milliseconds before the loader appears. |
+
+---
 
 ## Development
 
-### Build the package
+### Build
+To build the package, run:
 ```bash
 npm run build
 ```
 
-### Run tests
+### Tests
+To execute unit tests:
 ```bash
 npm test
 ```
 
-### Run linting
+### Linting
+To run static code analysis:
 ```bash
 npm run lint
 ```
 
-### Development server
+### Development Server
+To start a local development server:
 ```bash
 npm start
 ```
 
+---
+
 ## Migration from v1.x (Angular 9)
 
-If upgrading from simple-ng-loader v1.x:
-- Update to Node.js 22.22.3+ or 24.15.0+ or 26.0.0+
-- Run `npm install` with `--legacy-peer-deps` if needed
-- All APIs remain backward compatible; no code changes required
-- Test component rendering after upgrade
+When upgrading from `simple-ng-loader` v1.x:
+- Ensure your environment runs Node.js `22.22.3+`, `24.15.0+`, or `26.0.0+`.
+- If you encounter dependency resolution issues during installation, use:
+  ```bash
+  npm install simple-ng-loader --legacy-peer-deps
+  ```
+- All APIs remain backward compatible; no code changes are required.
+- Test that the component renders correctly after upgrading.
 
+---
 
-````
-jandginvestment@gmail.com
-````
-# stackblitz
-[https://stackblitz.com/edit/simple-ng-loader](https://stackblitz.com/edit/simple-ng-loader)
+## Demo & Support
 
-###### End of the file
+- **Live Demo:** [StackBlitz Playground](https://stackblitz.com/edit/simple-ng-loader)
+- **Support / Feedback:** Contact [jandginvestment@gmail.com](mailto:jandginvestment@gmail.com)
